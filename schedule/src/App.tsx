@@ -59,7 +59,7 @@ export const App: React.FC<Props> = ({}) => {
         const preTime = busPoints.find(({ hours, minutes }) => hours === hour && minutes - WALK_TIME >= minute);
 
         if (preTime) {
-            console.log(preTime.minutes, minute)
+
             if (preTime.minutes - minute - WALK_TIME === 0) {
                 setResult("Нужно выходить сейчас");
                 return;
@@ -79,6 +79,7 @@ export const App: React.FC<Props> = ({}) => {
         const postTime = busPoints.find(({ hours, minutes }) => hours === hour + 1 && minutes + 60 - minute >= WALK_TIME);
 
         if (postTime) {
+            
             if (postTime.minutes + 60 - minute - WALK_TIME === 0) {
                 setResult("Нужно выходить сейчас");
                 return;
