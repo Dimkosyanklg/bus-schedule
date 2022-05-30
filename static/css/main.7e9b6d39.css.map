@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.7e9b6d39.css","mappings":"AAAA,KACI,QACJ,CAEA,SACI,qBAAuB,CACvB,oBACJ","sources":["content/css/main.css"],"sourcesContent":["body {\r\n    margin: 0;\r\n}\r\n\r\n.wrapper {\r\n    border: 1px solid black;\r\n    margin: 200px 200px 0 200px;\r\n}"],"names":[],"sourceRoot":""}
