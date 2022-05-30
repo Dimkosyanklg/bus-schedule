@@ -1,7 +1,7 @@
 {
   "name": "schedule",
   "version": "0.1.0",
-  "homepage": "https://Dimkosyanklg.github.io/schedule",
+  "homepage": "https://dimkosyanklg.github.io/schedule",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -15,7 +15,8 @@
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "lodash": "^4.17.21"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "@types/lodash": "^4.14.180"
   }
 }
