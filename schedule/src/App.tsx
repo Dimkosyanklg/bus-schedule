@@ -59,7 +59,8 @@ export const App: React.FC<Props> = ({}) => {
         const preTime = busPoints.find(({ hours, minutes }) => hours === hour && minutes - WALK_TIME >= minute);
 
         if (preTime) {
-            if (preTime.minutes + 60 - minute - WALK_TIME === 0) {
+            console.log(preTime.minutes, minute)
+            if (preTime.minutes - minute - WALK_TIME === 0) {
                 setResult("Нужно выходить сейчас");
                 return;
             }
@@ -98,6 +99,7 @@ export const App: React.FC<Props> = ({}) => {
 
     return (
         <div className="wrapper">
+            <div>Автобусы ходят с 6:00 до 0:00&nbsp;с интервалом в 15 минут. Время в пути до автобуса — 5 минут.</div>
             <img className="bus-img" src={busPng} alt="" />
             <div className="input-wrapper">
                 <input
