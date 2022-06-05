@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+
+button {
+    border: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 15px;
+    display: flex;
+    height: 440px;
+}
+
+.constructor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 48px;
+    border: 1px solid #e2e3e5;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.btn__operator {
+    width: 52px;
+}
+.btn__number {
+    width: 72px;
+}
+.btn__number--large {
+    width: 152px;
+}
+
+.container {
+    display: flex;
+    width: 240px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.container__number {
+    height: 224px;
+}
+.container__operator {
+    height: 56px;
+}
+.container__value {
+    width: 240px;
+    height: 60px;
+}
+.container__evaluate {
+    width: 240px;
+    height: 72px;
+}
+
+.value {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 224px;
+    height: 52px;
+    background: #f3f4f6;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    padding-right: 8px;
+}
+
+.evaluate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 64px;
+    background: #5d5fef;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dropzone {
+    height: 100%;
+    width: 240px;
+    margin-left: 15px;
+    border: 2px dashed #c4c4c4;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dropzone__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.dropzone__info--head {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #5d5fef;
+}
+.dropzone__info--sub {
+    width: 106px;
+    height: 30px;
+    left: 10px;
+    top: 54px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.drag__zone {
+    border: 2px solid #5D5FEF;
+    box-sizing: border-box;
+}
